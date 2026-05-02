@@ -148,9 +148,9 @@ python visualize.py --checkpoint checkpoints/best_ce.pth --loss ce --num_samples
 
 | Loss      | 最佳验证集 mIoU |
 |-----------|-----------------|
-| CE        | —               |
-| Dice      | —               |
-| Combined  | —               |
+| CE        | 0.6264          |
+| Dice      | 0.5992          |
+| Combined  | 0.6322          |
 
 *（训练完成后填入结果。）*
 

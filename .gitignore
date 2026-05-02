@@ -1,0 +1,34 @@
+# Data
+data/
+
+# Model checkpoints
+unet_project/checkpoints/
+*.pth
+
+# Visualizations
+unet_project/vis_results/
+
+# Images / figures
+figures/
+*.png
+*.jpg
+*.jpeg
+*.gif
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+
+# Claude
+.claude/
+
+# IDE
+.vscode/
+.idea/
+
+# Wandb
+wandb/

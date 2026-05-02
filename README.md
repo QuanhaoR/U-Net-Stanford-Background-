@@ -114,7 +114,17 @@ python run_all.py
 - 学习率调度器：ReduceLROnPlateau（factor=0.5, patience=5）
 - 评估指标：mIoU（mean Intersection-over-Union），对 8 个类别取平均
 - 未知像素（label=-1）映射为 `ignore_index=255`，不参与损失计算和指标评估
-- 实验跟踪：[wandb](https://wandb.ai/)（project 名：`hw2-unet`）
+
+## 测试 / 评估
+
+加载训练好的权重，在验证集上计算 mIoU 和 Pixel Accuracy：
+
+```bash
+cd unet_project
+python eval.py --checkpoint checkpoints/best_ce.pth --loss ce
+python eval.py --checkpoint checkpoints/best_dice.pth --loss dice
+python eval.py --checkpoint checkpoints/best_combined.pth --loss combined
+```
 
 ## 可视化
 
